@@ -11,20 +11,8 @@ public class HomeWork1String {
 		 * in that String?
 		 */
 
-		String str = "Is it saturday? Is it raining? Do we have a Java Class today?";
+		String str="Is it saturday? Is it raining? Do we have a Java Class today? i love Java. we go to park today.";
+		System.out.println(str.split("[?.!]").length);
 		
-		int counter = 0;
-		
-		for (int i = 0; i < str.length(); i++) {
-			
-			char x = str.charAt(i);
-			
-			if (x == '?' || x == '!' || x == '.') {
-				counter++;
-			}
-		}
-		
-		System.out.println("String has "+counter+" sentences");
 	}
-
 }

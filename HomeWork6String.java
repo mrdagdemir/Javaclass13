@@ -6,36 +6,29 @@ public class HomeWork6String {
 		// TODO Auto-generated method stub
 
 		/*
-		 * How would you reverse a String word by word? for example // input=>This is
-		 * sentence i want to reverse // output=>sihT si ecnetnes i tnaw ot esrever
+		 * How would you reverse a String word by word? for example // 
+		 * input=>This is sentence i want to reverse // output=>sihT si 
+		 * ecnetnes i tnaw ot esrever
 		 */
 
-		String str = "This is sentence i want to reverse";
+		String str="This is sentence I want to reverse";
 		
-		String str0=str.trim()+" ";
+         String[] arr=str.split(" ");
 		
-		String str1 = "";
-		
-		String str2 = "";
-		
-		int x = 0;
-		
-		for (int i = 0; i < str0.length(); i++) {
-
-			if (str0.charAt(i) == ' ') {
-
-				str1 = str0.substring(x, i+1);
-
-				x = i+1;
-				
-				for (int y = str1.length() - 1; y >= 0; y--) {
-					
-					str2 += str1.charAt(y);
-				}
-			}
+		for(String s:arr) {
+			System.out.print(new StringBuilder(s).reverse()+" ");
 		}
-		System.out.println(str2.trim());
-	}
+		//new StringBuilder(s) object of StringBuilder is craeted
+		
+		System.out.println();
+		//System.out.println(new StringBuilder(str).reverse());
+		
+		System.out.println("---------");
 
+		
+		for(int i=str.length()-1;i>=0;i--) {
+			System.out.print(str.charAt(i));
+		}
+	}
 }
-	
+

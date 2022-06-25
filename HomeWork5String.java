@@ -12,10 +12,8 @@ public class HomeWork5String {
          *
 		 */
 		
-		String str = "abcde12345673243525213324fgdhgfdsghsdf!@#$ %^&*()_-=+,./|<>{}[];'~`*?";
-		System.out.println("String : "+str);
-		String str1=str.replaceAll("[A-Za-z0-9]","");
-		System.out.println("There are "+(str.length()-str1.length())+" Alphanumeric characters int the String");
+		String str="asdasd132546!@#";
+		System.out.println(str.replaceAll("[^A-Za-z0-9]", "").length());
 		
 		
 

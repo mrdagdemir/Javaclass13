@@ -12,14 +12,8 @@ public class Homework2String {
 		 * to get a new String without any spaces.
 		 */
 		
-		Scanner scanner = new Scanner(System.in);
-		
-		System.out.println("Please write a sentence");
-		String str = scanner.nextLine();
-		String str1 = str.replace(" ", "");
-		System.out.println(str1);
-		scanner.close();
-
+		String str="Olegs building is on fire";
+		System.out.println(str.replace(" ", ""));
 	}
 
 
